@@ -13,7 +13,12 @@ with open(sys.argv[1], encoding='utf-8') as f:
         #print('# ' + data[group_id]['element']['name']['text'])
         text += '\n' + data[group_id]['element']['name']['text'] + '\n'
         
-        for key, entry in data[group_id]['element']['entries'].items():
+        entries_sorted = sorted(data[group_id]['element']['entries'],key=lambda x:data[group_id]['element']['entries'][x]['order'])
+        
+        for key in entries_sorted:
+        
+            entry = data[group_id]['element']['entries'][key]
+            
             #print(" - " + entry['element']['type'])
             ele = entry['element']
             if 'names' in ele:
