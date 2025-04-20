@@ -26,6 +26,10 @@ with open(sys.argv[1], encoding='utf-8') as f:
                     #print(" - - A NAME " + str(ele['names'][name_id]['order']))
                     text += ele['names'][name_id]['element']['name'] + '\n'
             elif 'name' in ele:
+            
+                if 'role' in ele:
+                    text += '\n' + ele['role']['text'] + '\n'
+            
                 #print(' - - A SINGLE NAME')
                 text += ele['name']['name'] + '\n'
             else:
