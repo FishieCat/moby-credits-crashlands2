@@ -3,8 +3,8 @@ Converting Crashlands 2 credits JSON to mobygames text import format
 
 # Requirements
 
-Python
-git-bash recommended, see https://github.com/FishieCat/Arma-Reforger-Credits-Extractor
+- Python
+- git-bash recommended, see https://github.com/FishieCat/Arma-Reforger-Credits-Extractor
 
 # How to extract/convert
 
