@@ -18,7 +18,6 @@ with open(sys.argv[1], encoding='utf-8') as f:
             ele = entry['element']
             if 'names' in ele:
             
-                #print( "FUKUUUUUUUUUUUUUUUUUUK")
                 #print( ele['role']['text'] )
                 text += '\n' + ele['role']['text'] + '\n'
             
